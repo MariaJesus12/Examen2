@@ -26,54 +26,62 @@ public class FrmGenerador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnPlataforma = new javax.swing.JButton();
+        btnCaja = new javax.swing.JButton();
+        btnPreferencial = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("jButton1");
+        btnPlataforma.setText("Plataforma");
+        btnPlataforma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlataformaActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("jButton2");
+        btnCaja.setText("Caja");
 
-        jButton3.setText("jButton3");
+        btnPreferencial.setText("Preferencial ");
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Elija el tipo de ticket que desea obtener ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jButton1)
-                        .addGap(66, 66, 66)
-                        .addComponent(jButton2)
-                        .addGap(43, 43, 43)
-                        .addComponent(jButton3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(190, 190, 190)
-                        .addComponent(jLabel1)))
-                .addContainerGap(106, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addComponent(btnPlataforma)
+                .addGap(45, 45, 45)
+                .addComponent(btnCaja)
+                .addGap(42, 42, 42)
+                .addComponent(btnPreferencial)
+                .addContainerGap(41, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(95, 95, 95))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(141, 141, 141)
+                .addGap(63, 63, 63)
                 .addComponent(jLabel1)
-                .addGap(100, 100, 100)
+                .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
-                .addContainerGap(164, Short.MAX_VALUE))
+                    .addComponent(btnPlataforma)
+                    .addComponent(btnCaja)
+                    .addComponent(btnPreferencial))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPlataformaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlataformaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPlataformaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -111,9 +119,9 @@ public class FrmGenerador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnCaja;
+    private javax.swing.JButton btnPlataforma;
+    private javax.swing.JButton btnPreferencial;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
