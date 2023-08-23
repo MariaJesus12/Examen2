@@ -4,6 +4,8 @@
  */
 package View;
 
+import Model.AdministrarTicket;
+
 /**
  *
  * @author Student
@@ -15,6 +17,7 @@ public class FrmGenerador extends javax.swing.JFrame {
      */
     public FrmGenerador() {
         initComponents();
+        Model.AdministrarTicket administrar=new AdministrarTickets;
     }
 
     /**
@@ -29,7 +32,7 @@ public class FrmGenerador extends javax.swing.JFrame {
         btnPlataforma = new javax.swing.JButton();
         btnCaja = new javax.swing.JButton();
         btnPreferencial = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        JLTitulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,10 +44,20 @@ public class FrmGenerador extends javax.swing.JFrame {
         });
 
         btnCaja.setText("Caja");
+        btnCaja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCajaActionPerformed(evt);
+            }
+        });
 
         btnPreferencial.setText("Preferencial ");
+        btnPreferencial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPreferencialActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setText("Elija el tipo de ticket que desea obtener ");
+        JLTitulo.setText("Elija el tipo de ticket que desea obtener ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -60,14 +73,14 @@ public class FrmGenerador extends javax.swing.JFrame {
                 .addContainerGap(41, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(JLTitulo)
                 .addGap(95, 95, 95))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(63, 63, 63)
-                .addComponent(jLabel1)
+                .addComponent(JLTitulo)
                 .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnPlataforma)
@@ -80,8 +93,16 @@ public class FrmGenerador extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPlataformaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlataformaActionPerformed
-        // TODO add your handling code here:
+      administrar.agregar;
     }//GEN-LAST:event_btnPlataformaActionPerformed
+
+    private void btnCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCajaActionPerformed
+      administrar.agregar;
+    }//GEN-LAST:event_btnCajaActionPerformed
+
+    private void btnPreferencialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPreferencialActionPerformed
+       administrar.agregar;
+    }//GEN-LAST:event_btnPreferencialActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,9 +140,9 @@ public class FrmGenerador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLTitulo;
     private javax.swing.JButton btnCaja;
     private javax.swing.JButton btnPlataforma;
     private javax.swing.JButton btnPreferencial;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

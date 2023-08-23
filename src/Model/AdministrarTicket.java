@@ -9,6 +9,14 @@ public class AdministrarTicket {
     private String numero;
     private String tipo;
 
+    public AdministrarTicket() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void AdministrarTickets() {
+    
+    }
+
     public String getNumero() {
         return numero;
     }
@@ -46,14 +54,16 @@ public class AdministrarTicket {
                 contA++;
         }
     }
-      HashMap<String, Integer>Tickets=new HashMap<>();
+    HashMap<String, Integer>Tickets=new HashMap<>();
 public void Agregar (){
  Tickets.put(this.tipo, Integer.getInteger(numero));
            }
 public void Eliminar(){
-    Tickets.clear();
+for (Integer Ticket: Tickets.values() )
+    Tickets.remove(Ticket);
 }
 public void Buscar(){
     Tickets.containsKey(this.tipo);
 }
-}
+  }
+
